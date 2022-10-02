@@ -1,22 +1,21 @@
 import React from "react";
 import {
-    FlatList, Image, SafeAreaView, Text, TouchableOpacity, View
+    FlatList, Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View
 } from "react-native";
+
 import { COLORS, FONTS, icons, images, SIZES } from '../constants';
 
 const Home = ({ navigation }) => {
 
-    // initial location
+    // Dummy Datas
 
     const initialCurrentLocation = {
         streetName: "Senbag Thana",
         gps: {
-            latitude: 22.99066585636865,
-            longitude: 91.23422888905802
+            latitude: 22.990691086500977, 
+            longitude: 91.23457575077664
         }
     }
-
-    // Food Catagory
 
     const categoryData = [
         {
@@ -87,12 +86,12 @@ const Home = ({ navigation }) => {
             photo: images.burger_restaurant_1,
             duration: "30 - 45 min",
             location: {
-                latitude: 23.012645830760075, 
-                longitude: 91.24609055846416,
+                latitude: 22.957118940428686, 
+                longitude: 91.21942332993375
             },
             courier: {
                 avatar: images.avatar_1,
-                name: "Mili"
+                name: "Megla"
             },
             menu: [
                 {
@@ -111,31 +110,23 @@ const Home = ({ navigation }) => {
                     calories: 250,
                     price: 15
                 },
-                {
-                    menuId: 3,
-                    name: "Crispy Baked French Fries",
-                    photo: images.baked_fries,
-                    description: "Crispy Baked French Fries",
-                    calories: 194,
-                    price: 8
-                }
             ]
         },
         {
             id: 2,
-            name: "Pizza",
+            name: "ByProgrammers Pizza",
             rating: 4.8,
             categories: [2, 4, 6],
             priceRating: expensive,
             photo: images.pizza_restaurant,
-            duration: "10 - 15 min",
+            duration: "15 - 20 min",
             location: {
-                latitude: 22.95767518358799, 
-                longitude: 91.21987125653182,
+                latitude: 1.556306570595712,
+                longitude: 110.35504616746915,
             },
             courier: {
                 avatar: images.avatar_2,
-                name: "Jhony Haydar"
+                name: "Jackson"
             },
             menu: [
                 {
@@ -154,23 +145,39 @@ const Home = ({ navigation }) => {
                     calories: 250,
                     price: 20
                 },
+                {
+                    menuId: 6,
+                    name: "Tomato Pasta",
+                    photo: images.tomato_pasta,
+                    description: "Pasta with fresh tomatoes",
+                    calories: 100,
+                    price: 10
+                },
+                {
+                    menuId: 7,
+                    name: "Mediterranean Chopped Salad ",
+                    photo: images.salad,
+                    description: "Finely chopped lettuce, tomatoes, cucumbers",
+                    calories: 100,
+                    price: 10
+                }
             ]
         },
         {
             id: 3,
-            name: "Hotdogs",
+            name: "ByProgrammers Hotdogs",
             rating: 4.8,
             categories: [3],
             priceRating: expensive,
             photo: images.hot_dog_restaurant,
-            duration: "25 - 30 min",
+            duration: "20 - 25 min",
             location: {
-                latitude: 22.97963797175502,
-                longitude: 91.2048427595477,
+                latitude: 1.5238753474714375,
+                longitude: 110.34261833833622,
             },
             courier: {
                 avatar: images.avatar_3,
-                name: "Mithu"
+                name: "James"
             },
             menu: [
                 {
@@ -185,19 +192,19 @@ const Home = ({ navigation }) => {
         },
         {
             id: 4,
-            name: "Sushi",
+            name: "ByProgrammers Sushi",
             rating: 4.8,
             categories: [8],
             priceRating: expensive,
             photo: images.japanese_restaurant,
             duration: "10 - 15 min",
             location: {
-                latitude:22.991610563158133, 
-                longitude: 91.25262160185238,
+                latitude: 1.5578068150528928,
+                longitude: 110.35482523764315,
             },
             courier: {
                 avatar: images.avatar_4,
-                name: "Mifta"
+                name: "Ahmad"
             },
             menu: [
                 {
@@ -212,19 +219,19 @@ const Home = ({ navigation }) => {
         },
         {
             id: 5,
-            name: "Cuisine",
+            name: "ByProgrammers Cuisine",
             rating: 4.8,
             categories: [1, 2],
             priceRating: affordable,
             photo: images.noodle_shop,
-            duration: "30 - 35 min",
+            duration: "15 - 20 min",
             location: {
-                latitude: 22.945396968510337, 
-                longitude: 91.25802587754036,
+                latitude: 1.558050496260768,
+                longitude: 110.34743759630511,
             },
             courier: {
                 avatar: images.avatar_4,
-                name: "Rakib"
+                name: "Muthu"
             },
             menu: [
                 {
@@ -265,19 +272,19 @@ const Home = ({ navigation }) => {
         {
 
             id: 6,
-            name: "Dessets",
+            name: "ByProgrammers Dessets",
             rating: 4.9,
             categories: [9, 10],
             priceRating: affordable,
             photo: images.kek_lapis_shop,
-            duration: "08 - 10 min",
+            duration: "35 - 40 min",
             location: {
-                latitude: 22.999682409385535,
-                longitude: 91.20799958130661,
+                latitude: 1.5573478487252896,
+                longitude: 110.35568783282145,
             },
             courier: {
-                avatar: images.avatar_5,
-                name: "Jihan"
+                avatar: images.avatar_1,
+                name: "Jessie"
             },
             menu: [
                 {
