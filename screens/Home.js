@@ -114,19 +114,19 @@ const Home = ({ navigation }) => {
         },
         {
             id: 2,
-            name: "ByProgrammers Pizza",
+            name: "Pizza",
             rating: 4.8,
             categories: [2, 4, 6],
             priceRating: expensive,
             photo: images.pizza_restaurant,
             duration: "15 - 20 min",
             location: {
-                latitude: 1.556306570595712,
-                longitude: 110.35504616746915,
+                latitude: 22.978713003876, 
+                longitude: 91.21181731573422
             },
             courier: {
                 avatar: images.avatar_2,
-                name: "Jackson"
+                name: "Awlad Hossain"
             },
             menu: [
                 {
@@ -145,39 +145,23 @@ const Home = ({ navigation }) => {
                     calories: 250,
                     price: 20
                 },
-                {
-                    menuId: 6,
-                    name: "Tomato Pasta",
-                    photo: images.tomato_pasta,
-                    description: "Pasta with fresh tomatoes",
-                    calories: 100,
-                    price: 10
-                },
-                {
-                    menuId: 7,
-                    name: "Mediterranean Chopped Salad ",
-                    photo: images.salad,
-                    description: "Finely chopped lettuce, tomatoes, cucumbers",
-                    calories: 100,
-                    price: 10
-                }
             ]
         },
         {
             id: 3,
-            name: "ByProgrammers Hotdogs",
+            name: "Hotdogs",
             rating: 4.8,
             categories: [3],
             priceRating: expensive,
             photo: images.hot_dog_restaurant,
             duration: "20 - 25 min",
             location: {
-                latitude: 1.5238753474714375,
-                longitude: 110.34261833833622,
+                latitude: 22.985856426423947, 
+                longitude: 91.25113747358931
             },
             courier: {
                 avatar: images.avatar_3,
-                name: "James"
+                name: "Mifta"
             },
             menu: [
                 {
@@ -192,19 +176,19 @@ const Home = ({ navigation }) => {
         },
         {
             id: 4,
-            name: "ByProgrammers Sushi",
+            name: "Sushi",
             rating: 4.8,
             categories: [8],
             priceRating: expensive,
             photo: images.japanese_restaurant,
             duration: "10 - 15 min",
             location: {
-                latitude: 1.5578068150528928,
-                longitude: 110.35482523764315,
+                latitude: 22.988556216250696, 
+                longitude: 91.25093527509327
             },
             courier: {
                 avatar: images.avatar_4,
-                name: "Ahmad"
+                name: "Rakib"
             },
             menu: [
                 {
@@ -219,19 +203,19 @@ const Home = ({ navigation }) => {
         },
         {
             id: 5,
-            name: "ByProgrammers Cuisine",
+            name: "Cuisine",
             rating: 4.8,
             categories: [1, 2],
             priceRating: affordable,
             photo: images.noodle_shop,
             duration: "15 - 20 min",
             location: {
-                latitude: 1.558050496260768,
-                longitude: 110.34743759630511,
+                latitude: 22.977976075681624, 
+                longitude: 91.24148059506491
             },
             courier: {
                 avatar: images.avatar_4,
-                name: "Muthu"
+                name: "Jihan"
             },
             menu: [
                 {
@@ -250,41 +234,25 @@ const Home = ({ navigation }) => {
                     calories: 300,
                     price: 8
                 },
-                {
-                    menuId: 12,
-                    name: "Nasi Lemak",
-                    photo: images.nasi_lemak,
-                    description: "A traditional Malay rice dish",
-                    calories: 300,
-                    price: 8
-                },
-                {
-                    menuId: 13,
-                    name: "Nasi Briyani with Mutton",
-                    photo: images.nasi_briyani_mutton,
-                    description: "A traditional Indian rice dish with mutton",
-                    calories: 300,
-                    price: 8
-                },
 
             ]
         },
         {
 
             id: 6,
-            name: "ByProgrammers Dessets",
+            name: "Dessets",
             rating: 4.9,
             categories: [9, 10],
             priceRating: affordable,
             photo: images.kek_lapis_shop,
             duration: "35 - 40 min",
             location: {
-                latitude: 1.5573478487252896,
-                longitude: 110.35568783282145,
+                latitude: 22.979612547171698, 
+                longitude: 91.20469969241657
             },
             courier: {
-                avatar: images.avatar_1,
-                name: "Jessie"
+                avatar: images.avatar_5,
+                name: "Mithu"
             },
             menu: [
                 {
